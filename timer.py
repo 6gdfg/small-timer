@@ -17,28 +17,28 @@ class Timer:
         self.timer_label = tk.Label(self.master, text="{}:{}:{}".format(self.hour, self.minute, self.second), font=("Arial", 30))
         self.timer_label.pack(pady=20)
 
-        self.start_button = tk.Button(self.master, text="开始", font=("Arial", 20), command=self.start_timer)
+        self.start_button = tk.Button(self.master, text="start", font=("Arial", 20), command=self.start_timer)
         self.start_button.pack(pady=10)
 
-        self.stop_button = tk.Button(self.master, text="停止", font=("Arial", 20), command=self.stop_timer)
+        self.stop_button = tk.Button(self.master, text="stop", font=("Arial", 20), command=self.stop_timer)
         self.stop_button.pack(pady=10)
 
-        self.hour_button = tk.Button(self.master, text="小时+1", font=("Arial", 16), command=self.add_hour)
+        self.hour_button = tk.Button(self.master, text="hour+1", font=("Arial", 16), command=self.add_hour)
         self.hour_button.pack(side=tk.LEFT, padx=10)
 
-        self.minute_button = tk.Button(self.master, text="分钟+1", font=("Arial", 16), command=self.add_minute)
+        self.minute_button = tk.Button(self.master, text="minute+1", font=("Arial", 16), command=self.add_minute)
         self.minute_button.pack(side=tk.LEFT, padx=10)
 
-        self.second_button = tk.Button(self.master, text="秒+1", font=("Arial", 16), command=self.add_second)
+        self.second_button = tk.Button(self.master, text="second+1", font=("Arial", 16), command=self.add_second)
         self.second_button.pack(side=tk.LEFT, padx=10)
 
-        self.hour_subtract_button = tk.Button(self.master, text="小时-1", font=("Arial", 16), command=self.subtract_hour)
+        self.hour_subtract_button = tk.Button(self.master, text="hour-1", font=("Arial", 16), command=self.subtract_hour)
         self.hour_subtract_button.pack(side=tk.LEFT, padx=10)
 
-        self.minute_subtract_button = tk.Button(self.master, text="分钟-1", font=("Arial", 16), command=self.subtract_minute)
+        self.minute_subtract_button = tk.Button(self.master, text="minute-1", font=("Arial", 16), command=self.subtract_minute)
         self.minute_subtract_button.pack(side=tk.LEFT, padx=10)
 
-        self.second_subtract_button = tk.Button(self.master, text="秒-1", font=("Arial", 16), command=self.subtract_second)
+        self.second_subtract_button = tk.Button(self.master, text="second-1", font=("Arial", 16), command=self.subtract_second)
         self.second_subtract_button.pack(side=tk.LEFT, padx=10)
 
     def start_timer(self):
