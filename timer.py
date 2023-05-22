@@ -6,7 +6,7 @@ class Timer:
     def __init__(self, master):
         self.master = master
         self.master.title("倒计时")
-        self.master.geometry("500x400")
+        self.master.geometry("700x400")
         self.master.resizable(False, False)
 
         self.hour = 0
